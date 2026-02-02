@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Arduino CLI
         uses: arduino/setup-arduino-cli@v1
@@ -28,7 +28,7 @@ jobs:
           arduino-cli compile --fqbn esp8266:esp8266:nodemcuv2 --output-dir ./build ./GM-PRO-ULTIMATE.ino
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: GM-PRO-V4-Binary
           path: ./build/*.bin
