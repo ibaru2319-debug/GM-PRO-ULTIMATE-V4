@@ -19,7 +19,7 @@ jobs:
 
       - name: Install Libraries
         run: |
-          arduino-cli lib install "ESP8266SSD1306"
+          arduino-cli lib install "ESP8266 and ESP32 OLED driver for SSD1306 displays"
           arduino-cli lib install "ESP8266WiFi"
           arduino-cli lib install "ESP8266WebServer"
 
